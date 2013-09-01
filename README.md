@@ -1,4 +1,7 @@
-chromeapp
+gdgrss
 =========
 
-applicazioni per google chrome
+questa semplice estensione permette di accedere alla lista delle discussioni su Google Group tramite RSS
+
+
+
