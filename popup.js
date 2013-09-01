@@ -9,8 +9,8 @@ $(document).ready(function() {
             function(data) {
 
                 var $_xml = $(data);
-                
-                if ($('#title').text()=='')
+
+                if ($('#title').text() == '')
                     $('#title').text(
                         $_xml.find('title:first').text()
                     );
@@ -30,12 +30,16 @@ $(document).ready(function() {
                         $h3 = $('<h3>'),
                         $span = $('<span>');
 
-                    $a.attr('href', item.link);
-                    $a.text(item.title);
+                    $a.attr('href', item.link)
+                        .attr('target', '_blank')
+                        .text(item.title);
                     $h3.append($a);
-                    $li.append($h3);
+
+                    $li.append($h3)
+                        .append($span);
+
                     $span.html(item.description);
-                    $li.append($span);
+
                     $('#items').append($li);
 
                 });
@@ -43,8 +47,8 @@ $(document).ready(function() {
         ).fail(function() {
             alert('error');
         });
-    }else{
-      $('div.span8').html('<h1>aggiungere RSS FEED in opzioni</h1>');
+    } else {
+        $('div.span8').html('<h1>aggiungere RSS FEED in opzioni</h1>');
     };
 
 });
