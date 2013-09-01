@@ -1,4 +1,4 @@
-gdgrss
-======
+chromeapp
+=========
 
-Check RSS Google Group of GDG
+applicazioni per google chrome

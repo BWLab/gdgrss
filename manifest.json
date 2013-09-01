@@ -1,0 +1,26 @@
+{
+    "name": "ggrss",
+    "manifest_version": 2,
+    "version": "0.1",
+    "description": "rss google group",
+    "author": "Luigi Massa - lmassa@bwlab.it - http://www.bwlab.it",
+    "icons": {
+        "16": "gdgicon16.png",
+        "48": "gdgicon48.png",
+        "128": "gdgicon128.png"
+    },
+    "browser_action": {
+        "default_title": "",
+        "default_icon": "gdgicon128.png",
+        "default_popup": "popup.html",
+        "default_title": "GDG Rss Google Group"
+    },
+    "options_page": "options.html",
+    "background": {
+        "page": "background.html"
+    },
+    "permissions": [
+        "*://*.google.com/"
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+}
